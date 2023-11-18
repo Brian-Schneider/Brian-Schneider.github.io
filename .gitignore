@@ -1,0 +1,8 @@
+.python-version
+.vscode
+output
+.DS_Store
+*.pyc
+__pycache__
+py38
+.env
