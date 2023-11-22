@@ -28,7 +28,6 @@ jobs:
         pelican content -o output -s pelicanconf.py
     
     - name: Deploy
-      run: touch output/.nojekyll
       uses: peaceiris/actions-gh-pages@v3
       with:
         publish_branch: main
