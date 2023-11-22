@@ -1,3 +1,7 @@
 [submodules "pelican-plugins"]
     path = pelican-plugins
     url = git://github.com/getpelican/pelican-plugins.git
+
+[submodules "themes/Peli-Kiera"]
+    path = themes/Peli-Kiera
+    url = git://github.com/alexandrevicenzi/Peli-Kiera.git
