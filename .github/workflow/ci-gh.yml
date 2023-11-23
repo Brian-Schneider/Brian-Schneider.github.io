@@ -4,6 +4,8 @@ on:
   # Trigger the workflow on push on main branch, and pull request on main branch
   push:
     branches: [ "feature/blog" ]
+  commit:
+    branches: [ "feature/blog" ]
   pull_request:
     branches: [ "main" ]
 
