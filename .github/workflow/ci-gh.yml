@@ -29,10 +29,6 @@ jobs:
         run: |
           make publish
           touch output/.nojekyll
-
-    - name: Build
-      run: |
-        pelican content -o output -s pelicanconf.py
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
