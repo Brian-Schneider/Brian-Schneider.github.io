@@ -27,8 +27,8 @@ jobs:
 
     - name: Build Production Site
       run: |
+        make publish
         touch output/.nojekyll
-        pelican content -o output -s pelicanconf.py -t themes/Peli-Kiera
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
