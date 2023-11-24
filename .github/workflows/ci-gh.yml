@@ -27,11 +27,12 @@ jobs:
         cd themes
         git clone https://github.com/aleylara/Peli-Kiera.git
         cd ..
+        pip install pelican-neighbors
 
     - name: Build Production Site
       run: |
+        make publish
         touch output/.nojekyll
-        pelican content -o output -s pelicanconf.py -t themes/Peli-Kiera
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
