@@ -1,8 +1,7 @@
 Title: Are ‘you’ just inside your skin or is your smartphone part of you?
-Date: 2023-11-18
+Date: 2023-04-18
 Category: Psychology
 Slug: are-you-just-inside-your-skin-or-is-your-smartphone-part-of-you
-
 
 In November 2017, a gunman entered a church in Sutherland Springs in Texas, where he killed 26 people and wounded 20 others. He escaped in his car, with police and residents in hot pursuit, before losing control of the vehicle and flipping it into a ditch. When the police got to the car, he was dead. The episode is horrifying enough without its unsettling epilogue. In the course of their investigations, the FBI reportedly pressed the gunman’s finger to the fingerprint-recognition feature on his iPhone in an attempt to unlock it. Regardless of who’s affected, it’s disquieting to think of the police using a corpse to break into someone’s digital afterlife.
 

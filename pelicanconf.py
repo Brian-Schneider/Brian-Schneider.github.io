@@ -9,12 +9,13 @@ PATH = 'content'
 
 TIMEZONE = 'America/Sao_Paulo'
 
-DEFAULT_LANG = 'pt'
+DEFAULT_LANG = 'en'
 
 THEME = 'themes/Peli-Kiera'
 
-PLUGIN_PATHS = ['pelican-plugins']
 PLUGINS = ['neighbors']
+
+
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
