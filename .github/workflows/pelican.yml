@@ -1,17 +1,16 @@
-name: CI
+name: Deploy Blog
 
 on:
   # Trigger the workflow on push on main branch, and pull request on main branch
   push:
-    branches: [ "feature/blog" ]
+    branches:
+      - "feature/blog" 
   pull_request:
-    branches: [ "main" ]
-
-permissions:
-  contents: write
+    branches:
+      - "main"
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -19,16 +18,15 @@ jobs:
       with:
         python-version: "3.8"
 
-
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
     - name: Build Production Site
-      run: |
-        make publish
-        touch output/.nojekyll
+        run: |
+          make publish
+          touch output/.nojekyll
     
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
