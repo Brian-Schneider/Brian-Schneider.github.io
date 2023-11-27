@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>Life of Brian - Tecnologia</title><link href="/" rel="alternate"></link><link href="/feeds/tecnologia.atom.xml" rel="self"></link><id>/</id><updated>2023-11-23T00:00:00-03:00</updated><subtitle></subtitle><entry><title>Projeto: gerando sites estáticos com Python</title><link href="/projeto-gerando-sites-est%C3%A1ticos-com-python.html" rel="alternate"></link><published>2023-11-23T00:00:00-03:00</published><updated>2023-11-23T00:00:00-03:00</updated><author><name>Brian</name></author><id>tag:None,2023-11-23:/projeto-gerando-sites-estáticos-com-python.html</id><summary type="html">&lt;h2&gt;Visão Geral&lt;/h2&gt;
-&lt;p&gt;Este blog foi feito como Projeto Final do Módulo 2 (Versionamento e Arquivos de Marcação) do curso de DevOps no Vem Ser Tech, parceria entre a Ada Tech e o iFood.&lt;/p&gt;
-&lt;p&gt;A ideia gira em torno de utilizar a linguagem Python para converter arquivos de marcação (no caso …&lt;/p&gt;</summary><content type="html">&lt;h2&gt;Visão Geral&lt;/h2&gt;
-&lt;p&gt;Este blog foi feito como Projeto Final do Módulo 2 (Versionamento e Arquivos de Marcação) do curso de DevOps no Vem Ser Tech, parceria entre a Ada Tech e o iFood.&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Life of Brian - Tecnologia</title><link href="/" rel="alternate"></link><link href="/feeds/tecnologia.atom.xml" rel="self"></link><id>/</id><updated>2023-11-23T00:00:00-03:00</updated><subtitle></subtitle><entry><title>Projeto: gerando sites estáticos com Python</title><link href="/projeto-gerando-sites-est%C3%A1ticos-com-python.html" rel="alternate"></link><published>2023-11-23T00:00:00-03:00</published><updated>2023-11-23T00:00:00-03:00</updated><author><name>Brian</name></author><id>tag:None,2023-11-23:/projeto-gerando-sites-estáticos-com-python.html</id><summary type="html">&lt;p&gt;Este blog foi feito como Projeto Final do Módulo 2 (Versionamento e Arquivos de Marcação) do curso de DevOps no Vem Ser Tech, parceria entre a Ada Tech e o iFood.&lt;/p&gt;
+&lt;p&gt;A ideia gira em torno de utilizar a linguagem Python para converter arquivos de marcação (no caso desse blog …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Este blog foi feito como Projeto Final do Módulo 2 (Versionamento e Arquivos de Marcação) do curso de DevOps no Vem Ser Tech, parceria entre a Ada Tech e o iFood.&lt;/p&gt;
 &lt;p&gt;A ideia gira em torno de utilizar a linguagem Python para converter arquivos de marcação (no caso desse blog, Markdown) em um site estático/blog a ser hospedado no Github Pages por meio do Github Actions de forma automatizada. Para isso, optou-se por utilizar o SSG (Static Site Generator/Gerador de Site Estático) &lt;a href="https://docs.getpelican.com/en/stable/"&gt;Pelican&lt;/a&gt;.&lt;/p&gt;
-&lt;h2&gt;Criação do site parcial&lt;/h2&gt;</content><category term="Tecnologia"></category></entry></feed>
+&lt;h2&gt;Início do projeto&lt;/h2&gt;
+&lt;p&gt;Inicialmente, criou-se um repositório remoto "brian-schneider.github.io" no Github, pois esse blog será hospedado como o site principal do Github Pages, e, para isso, seu nome deve ser o mesmo da URL base desse serviço, sendo o mesmo baseado no nome de usuário da conta.&lt;/p&gt;
+&lt;p&gt;Em seguida, clonou-se esse repositório localmente e criou-se mais duas branchs além da própria main já existente: a "feature/blog" para trabalhar na real criação do blog, e uma "hotfix" para correções pontuais no projeto.&lt;/p&gt;
+&lt;p&gt;Agora, com o Python 3.8 instalado na máquina e dentro desse repositório recém criado, criou-se um arquivo "requirements.txt" para listar as depedências que serão instaladas no projeto. Assim, o conteúdo desse arquivo é:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;code&gt;&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;[&lt;/span&gt;&lt;span class="n"&gt;Markdown&lt;/span&gt;&lt;span class="o"&gt;]==&lt;/span&gt;&lt;span class="mf"&gt;4.5.4&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;beautifulsoup4&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;4.9.3&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;MarkupSafe&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.1.1&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;importlib&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;metadata&lt;/span&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="mf"&gt;5.0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;span class="n"&gt;pelican&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;neighbors&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.2.0&lt;/span&gt;&lt;span class="w"&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Onde:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;pelican: gerador de Sites Estáticos baseado em Python;&lt;/li&gt;
+&lt;li&gt;beautifulsoup4: pacote Python para análise de documentos HTML e XML. Necessário para alguns dos plugins do pelican;&lt;/li&gt;
+&lt;li&gt;MarkupSafe: pacote responsável por criar escapes de caracteres para utilizá-los em HTML e XML, evitando ataques de injeção na aplicação;&lt;/li&gt;
+&lt;li&gt;importlib-metadata: biblioteca que fornece acesso aos metadados dos pacotes instalados;&lt;/li&gt;
+&lt;li&gt;pelican-neighbors: plugin do Pelican que adiciona a links de Próximo/Anterior aos artigos.&lt;/li&gt;
+&lt;/ul&gt;</content><category term="Tecnologia"></category></entry></feed>
