@@ -64,4 +64,4 @@ O artigo propriamente dito vem aqui!!!
 
 Dentro da pasta principal do projeto, ao executar o comando "pelican content" no terminal, o Pelican irá popular a pasta "output" com todos os arquivos do site estático sendo criado, incluindo as postagens em "content" devidamente convertidas.
 
-No Terminal, utiliza-se o comando "pelican --listen" para gerar um servidor web em [http://localhost:8000](http://localhost:8000) para exibir o site estático contido na pasta "output"
+No Terminal, utiliza-se o comando "pelican --listen" para gerar um servidor web em [http://localhost:8000](http://localhost:8000) para exibir o site estático contido na pasta "output".

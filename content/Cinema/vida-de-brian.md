@@ -1,0 +1,10 @@
+Title: Projeto: A Vida de Brian
+Date: 2023-11-27
+Category: TCinema
+Slug: vida-de-brian
+
+A Vida de Brian (em inglês: Monty Python's Life of Brian) é um filme de comédia e sátira britânico de 1979 estrelado e escrito pelo grupo de comédia Monty Python (Graham Chapman, John Cleese, Terry Gilliam, Eric Idle, Terry Jones e Michael Palin), sendo dirigido por Terry Jones. O filme conta a história de Brian Cohen (interpretado por Graham Chapman), um jovem judeu que nasceu no mesmo dia que Jesus Cristo numa casa vizinha dele, e é confundido com o Messias. Após a retirada do financiamento pela EMI Films, poucos dias antes do início da produção, o fã de longa data dos Monty Pythons e ex-membro dos Beatles, George Harrison, arranjou financiamento para a realização de A Vida de Brian através da formação de sua empresa HandMade Films.
+
+Os temas de sátira religiosa do filme eram controversos na época de seu lançamento, provocando acusações de blasfêmia e protestos de alguns grupos religiosos. Trinta e nove autoridades locais do Reino Unido impuseram uma proibição definitiva ou aplicaram uma "Certificação X" (tornando o filme recomendado para maiores de 18 anos no país) impedindo efetivamente a exibição da comédia, uma vez que os distribuidores disseram que A Vida de Brian não poderia ser exibido a menos que tivesse sido editado e tivesse pelo menos uma "Certificação AA" (para maiores de 14).[carece de fontes] Alguns países, incluindo a Irlanda e a Noruega, proibiram sua exibição, com algumas dessas proibições durando décadas. Os cineastas incrementaram essa notoriedade na campanha de marketing do filme, com pôsteres na Suécia dizendo: "Que engraçado, foi proibido na Noruega!".
+
+O filme foi um sucesso de bilheteria, sendo o quarto filme com maior bilheteria no Reino Unido em 1979 e a maior bilheteria de qualquer filme britânico nos Estados Unidos naquele ano. Permaneceu popular e foi nomeado "o melhor filme de comédia de todos os tempos" por várias revistas e redes de televisão; anos mais tarde, em uma pesquisa do Channel 4 de 2006, A vida de Brian foi classificado em primeiro lugar na lista dos cinquenta maiores filmes de comédia de todos os tempos.
