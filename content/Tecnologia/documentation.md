@@ -14,7 +14,7 @@ Inicialmente, criou-se um repositório remoto "brian-schneider.github.io" no Git
 
 Em seguida, clonou-se esse repositório localmente e criou-se mais duas branchs além da própria main já existente: a "feature/blog" para trabalhar na real criação do blog, e uma "hotfix" para correções pontuais no projeto.
 
-Agora, com o Python 3.8 instalado na máquina e dentro desse repositório recém criado, criou-se um arquivo "requirements.txt" para listar as depedências que serão instaladas no projeto. Assim, o conteúdo desse arquivo é:
+Dentro desse repositório recém criado, criou-se um arquivo "requirements.txt" para listar as depedências que serão instaladas no projeto. Assim, o conteúdo desse arquivo é:
 
 ```plaintext
 pelican[Markdown]==4.5.4
@@ -32,3 +32,36 @@ Onde:
 - importlib-metadata: biblioteca que fornece acesso aos metadados dos pacotes instalados;
 - pelican-neighbors: plugin do Pelican que adiciona a links de Próximo/Anterior aos artigos.
 
+Agora, com o Python 3.8 e o pip (gerenciador de pacotes) instalados na máquina e dentro desse mesmo diretório, executa-se o comando "pip install -r requirements.txt" no Terminal para instalar essas dependências.
+
+Ao término dessa instalção, utiliza-se o comando "pelican-quickstart" para iniciar a criação e configuração do Pelican. Para isso, algumas perguntas serão feitas como nome e idioma do site, fuso horário, quantos itens por paginação etc. Uma que é recomendada a confirmação é o da criação dos arquivos tasks.py/Makefile pois ambos facilitam a geração e publicação do site.
+
+Com o processo de isntalação concluído, o esquema de pastas deverá ser o seguinte:
+
+```plaintext
+|-- content
+|-- output
+|-- Makefile
+|-- pelicanconf.py
+|-- publishconf.py
+|-- requirements.txt
+|-- tasks.py
+```
+
+Dentro da pasta "content" é onde serão criados os artigos que serão postados no blog em formato Markdown (.md). As primeiras linhas desse podem ser utilizadas para configurar os metadados do artigo e, após elas, entrar com o texto a ser de fato publicado, da seguinte forma:
+
+```code
+Title: Olá Mundo!  
+Date: 2023-11-27 13:00  
+Category: Python  
+Tags: pelican, markdown  
+Slug: primeiro-artigo  
+Author: Nome Sobrenome
+Summary: Um breve resumo sobre o post do Pelican
+
+O artigo propriamente dito vem aqui!!!
+```
+
+Dentro da pasta principal do projeto, ao executar o comando "pelican content" no terminal, o Pelican irá popular a pasta "output" com todos os arquivos do site estático sendo criado, incluindo as postagens em "content" devidamente convertidas.
+
+No Terminal, utiliza-se o comando "pelican --listen" para gerar um servidor web em [http://localhost:8000](http://localhost:8000) para exibir o site estático contido na pasta "output"
