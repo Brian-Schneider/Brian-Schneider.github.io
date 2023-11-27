@@ -1,6 +1,6 @@
-Title: Projeto: A Vida de Brian
+Title: A Vida de Brian
 Date: 2023-11-27
-Category: TCinema
+Category: Cinema
 Slug: vida-de-brian
 
 A Vida de Brian (em inglês: Monty Python's Life of Brian) é um filme de comédia e sátira britânico de 1979 estrelado e escrito pelo grupo de comédia Monty Python (Graham Chapman, John Cleese, Terry Gilliam, Eric Idle, Terry Jones e Michael Palin), sendo dirigido por Terry Jones. O filme conta a história de Brian Cohen (interpretado por Graham Chapman), um jovem judeu que nasceu no mesmo dia que Jesus Cristo numa casa vizinha dele, e é confundido com o Messias. Após a retirada do financiamento pela EMI Films, poucos dias antes do início da produção, o fã de longa data dos Monty Pythons e ex-membro dos Beatles, George Harrison, arranjou financiamento para a realização de A Vida de Brian através da formação de sua empresa HandMade Films.
