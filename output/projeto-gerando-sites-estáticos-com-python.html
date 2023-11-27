@@ -65,10 +65,28 @@
                 </li>
             </ul>
         </aside>
-        <h2>Visão Geral</h2>
-<p>Este blog foi feito como Projeto Final do Módulo 2 (Versionamento e Arquivos de Marcação) do curso de DevOps no Vem Ser Tech, parceria entre a Ada Tech e o iFood.</p>
+        <p>Este blog foi feito como Projeto Final do Módulo 2 (Versionamento e Arquivos de Marcação) do curso de DevOps no Vem Ser Tech, parceria entre a Ada Tech e o iFood.</p>
 <p>A ideia gira em torno de utilizar a linguagem Python para converter arquivos de marcação (no caso desse blog, Markdown) em um site estático/blog a ser hospedado no Github Pages por meio do Github Actions de forma automatizada. Para isso, optou-se por utilizar o SSG (Static Site Generator/Gerador de Site Estático) <a href="https://docs.getpelican.com/en/stable/">Pelican</a>.</p>
-<h2>Criação do site parcial</h2>
+<h2>Início do projeto</h2>
+<p>Inicialmente, criou-se um repositório remoto "brian-schneider.github.io" no Github, pois esse blog será hospedado como o site principal do Github Pages, e, para isso, seu nome deve ser o mesmo da URL base desse serviço, sendo o mesmo baseado no nome de usuário da conta.</p>
+<p>Em seguida, clonou-se esse repositório localmente e criou-se mais duas branchs além da própria main já existente: a "feature/blog" para trabalhar na real criação do blog, e uma "hotfix" para correções pontuais no projeto.</p>
+<p>Agora, com o Python 3.8 instalado na máquina e dentro desse repositório recém criado, criou-se um arquivo "requirements.txt" para listar as depedências que serão instaladas no projeto. Assim, o conteúdo desse arquivo é:</p>
+<div class="highlight"><pre><span></span><code><span class="n">pelican</span><span class="o">[</span><span class="n">Markdown</span><span class="o">]==</span><span class="mf">4.5.4</span><span class="w"></span>
+<span class="n">beautifulsoup4</span><span class="o">==</span><span class="mf">4.9.3</span><span class="w"></span>
+<span class="n">MarkupSafe</span><span class="o">==</span><span class="mf">1.1.1</span><span class="w"></span>
+<span class="n">importlib</span><span class="o">-</span><span class="n">metadata</span><span class="o">&lt;</span><span class="mf">5.0</span><span class="w"></span>
+<span class="n">pelican</span><span class="o">-</span><span class="n">neighbors</span><span class="o">==</span><span class="mf">1.2.0</span><span class="w"></span>
+</code></pre></div>
+
+
+<p>Onde:</p>
+<ul>
+<li>pelican: gerador de Sites Estáticos baseado em Python;</li>
+<li>beautifulsoup4: pacote Python para análise de documentos HTML e XML. Necessário para alguns dos plugins do pelican;</li>
+<li>MarkupSafe: pacote responsável por criar escapes de caracteres para utilizá-los em HTML e XML, evitando ataques de injeção na aplicação;</li>
+<li>importlib-metadata: biblioteca que fornece acesso aos metadados dos pacotes instalados;</li>
+<li>pelican-neighbors: plugin do Pelican que adiciona a links de Próximo/Anterior aos artigos.</li>
+</ul>
     </article>
     <section class="post-nav">
         <div id="left-page">
