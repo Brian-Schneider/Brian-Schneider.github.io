@@ -72,7 +72,7 @@
 <h2>Início do projeto</h2>
 <p>Inicialmente, criou-se um repositório remoto "brian-schneider.github.io" no Github, pois esse blog será hospedado como o site principal do Github Pages, e, para isso, seu nome deve ser o mesmo da URL base desse serviço, sendo o mesmo baseado no nome de usuário da conta.</p>
 <p>Em seguida, clonou-se esse repositório localmente e criou-se mais duas branchs além da própria main já existente: a "feature/blog" para trabalhar na real criação do blog, e uma "hotfix" para correções pontuais no projeto.</p>
-<p>Agora, com o Python 3.8 instalado na máquina e dentro desse repositório recém criado, criou-se um arquivo "requirements.txt" para listar as depedências que serão instaladas no projeto. Assim, o conteúdo desse arquivo é:</p>
+<p>Dentro desse repositório recém criado, criou-se um arquivo "requirements.txt" para listar as depedências que serão instaladas no projeto. Assim, o conteúdo desse arquivo é:</p>
 <div class="highlight"><pre><span></span><code><span class="n">pelican</span><span class="o">[</span><span class="n">Markdown</span><span class="o">]==</span><span class="mf">4.5.4</span><span class="w"></span>
 <span class="n">beautifulsoup4</span><span class="o">==</span><span class="mf">4.9.3</span><span class="w"></span>
 <span class="n">MarkupSafe</span><span class="o">==</span><span class="mf">1.1.1</span><span class="w"></span>
@@ -89,6 +89,34 @@
 <li>importlib-metadata: biblioteca que fornece acesso aos metadados dos pacotes instalados;</li>
 <li>pelican-neighbors: plugin do Pelican que adiciona a links de Próximo/Anterior aos artigos.</li>
 </ul>
+<p>Agora, com o Python 3.8 e o pip (gerenciador de pacotes) instalados na máquina e dentro desse mesmo diretório, executa-se o comando "pip install -r requirements.txt" no Terminal para instalar essas dependências.</p>
+<p>Ao término dessa instalção, utiliza-se o comando "pelican-quickstart" para iniciar a criação e configuração do Pelican. Para isso, algumas perguntas serão feitas como nome e idioma do site, fuso horário, quantos itens por paginação etc. Uma que é recomendada a confirmação é o da criação dos arquivos tasks.py/Makefile pois ambos facilitam a geração e publicação do site.</p>
+<p>Com o processo de isntalação concluído, o esquema de pastas deverá ser o seguinte:</p>
+<div class="highlight"><pre><span></span><code><span class="err">|-- content</span>
+<span class="err">|-- output</span>
+<span class="err">|-- Makefile</span>
+<span class="err">|-- pelicanconf.py</span>
+<span class="err">|-- publishconf.py</span>
+<span class="err">|-- requirements.txt</span>
+<span class="err">|-- tasks.py</span>
+</code></pre></div>
+
+
+<p>Dentro da pasta "content" é onde serão criados os artigos que serão postados no blog em formato Markdown (.md). As primeiras linhas desse podem ser utilizadas para configurar os metadados do artigo e, após elas, entrar com o texto a ser de fato publicado, da seguinte forma:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Title</span><span class="o">:</span> <span class="n">Olá</span> <span class="n">Mundo</span><span class="o">!</span>  
+<span class="n">Date</span><span class="o">:</span> <span class="mi">2023</span><span class="o">-</span><span class="mi">11</span><span class="o">-</span><span class="mi">27</span> <span class="mi">13</span><span class="o">:</span><span class="mi">00</span>  
+<span class="n">Category</span><span class="o">:</span> <span class="n">Python</span>  
+<span class="n">Tags</span><span class="o">:</span> <span class="n">pelican</span><span class="o">,</span> <span class="n">markdown</span>  
+<span class="n">Slug</span><span class="o">:</span> <span class="n">primeiro</span><span class="o">-</span><span class="n">artigo</span>  
+<span class="n">Author</span><span class="o">:</span> <span class="n">Nome</span> <span class="n">Sobrenome</span>
+<span class="n">Summary</span><span class="o">:</span> <span class="n">Um</span> <span class="n">breve</span> <span class="n">resumo</span> <span class="n">sobre</span> <span class="n">o</span> <span class="n">post</span> <span class="k">do</span> <span class="n">Pelican</span>
+
+<span class="n">O</span> <span class="n">artigo</span> <span class="n">propriamente</span> <span class="n">dito</span> <span class="n">vem</span> <span class="n">aqui</span><span class="o">!!!</span>
+</code></pre></div>
+
+
+<p>Dentro da pasta principal do projeto, ao executar o comando "pelican content" no terminal, o Pelican irá popular a pasta "output" com todos os arquivos do site estático sendo criado, incluindo as postagens em "content" devidamente convertidas.</p>
+<p>No Terminal, utiliza-se o comando "pelican --listen" para gerar um servidor web em <a href="http://localhost:8000">http://localhost:8000</a> para exibir o site estático contido na pasta "output"</p>
     </article>
     <section class="post-nav">
         <div id="left-page">
